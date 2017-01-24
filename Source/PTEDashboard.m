@@ -99,7 +99,7 @@ static PTEDashboard * _sharedDashboard;
     self.minimized = YES;
 }
 
-- (void)handleStatusBarOrientationChange:(NSNotification *)notification
+- (void)handleStatusBarOrientationChange:(NSNotification *)notification NS_EXTENSION_UNAVAILABLE("Not available in extensions")
 {
     UIApplication * app = [UIApplication sharedApplication];
     UIInterfaceOrientation currentOrientation = app.statusBarOrientation;
@@ -197,7 +197,7 @@ static PTEDashboard * _sharedDashboard;
     }
 }
 
-- (void)handlePanGesture:(UIPanGestureRecognizer *)gestureRecognizer
+- (void)handlePanGesture:(UIPanGestureRecognizer *)gestureRecognizer NS_EXTENSION_UNAVAILABLE("Not available in extensions")
 {
     [self setWindowHeight:[gestureRecognizer locationInView:self].y];
 }
@@ -222,7 +222,7 @@ static PTEDashboard * _sharedDashboard;
     [self setWindowHeight:kMinimumHeight];
 }
 
-- (void)setWindowHeight:(CGFloat)height
+- (void)setWindowHeight:(CGFloat)height NS_EXTENSION_UNAVAILABLE("Not available in extensions")
 {
     // Validate height
     height = MAX(kMinimumHeight, height);

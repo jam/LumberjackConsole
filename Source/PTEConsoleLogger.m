@@ -596,7 +596,7 @@ selectedScopeButtonIndexDidChange:(NSInteger)selectedScope
     [searchBar resignFirstResponder];
 }
 
-- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar
+- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar NS_EXTENSION_UNAVAILABLE("Not available in extensions")
 {
     // Make dashboard fullscreen if needed
     PTEDashboard * dashboard = (PTEDashboard *)self.tableView.window;

@@ -33,25 +33,25 @@
 + (PTEDashboard *)sharedDashboard;
 
 /// Add the dashboard to the screen.
-- (void)show;
+- (void)show NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 /// @name Properties
 
 /// Whether the dashboard is maximized.
-@property (nonatomic, getter=isMaximized)   BOOL maximized;
+@property (nonatomic, getter=isMaximized)   BOOL maximized NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 /// Whether the dashboard is minimized.
-@property (nonatomic, getter=isMinimized)   BOOL minimized;
+@property (nonatomic, getter=isMinimized)   BOOL minimized NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 /// @name First Responder Actions
 
 /// Maximize/minimize the log dashboard.
 /// @param sender The sender object.
-- (IBAction)toggleFullscreen:(UIButton *)sender;
+- (IBAction)toggleFullscreen:(UIButton *)sender NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 /// Toggle between the loggerView and the adjustLevelsView.
 /// @param sender The sender object.
-- (IBAction)toggleAdjustLevelsController:(id)sender;
+- (IBAction)toggleAdjustLevelsController:(id)sender NS_EXTENSION_UNAVAILABLE("Not available in extensions");
 
 @end
 
